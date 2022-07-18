@@ -1,3 +1,4 @@
+//goblal variable
 const categoryItem = document.querySelectorAll('.category__item')
 
 //active category menu
@@ -13,19 +14,37 @@ categoryItem.forEach((item) => {
 
 })
 
-//scroll 
+//scroll
 categoryItem.forEach(item => {
-  
+
     item.addEventListener('click', (e) => {
         e.preventDefault();
+
         const id = e.currentTarget.dataset.title
         const element = document.getElementById(id)
-        let position = element.offsetTop
-        
+        const menuBar = document.querySelector('.menubar')
+        const menuHeight = menuBar.getBoundingClientRect().height
+        const fixedMenu = menuBar.classList.contains('menubar--fixed')
+        let position = element.offsetTop - menuHeight
+
+        if(!fixedMenu) {
+            position = position - menuHeight
+        }
         window.scroll({
             left:0,
             top: position
         })
     })
-    
+})
+
+//fixed nav
+window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset
+    const menuBar = document.querySelector('.menubar')
+    const menuHeight = menuBar.getBoundingClientRect().height
+    if(scrollHeight > menuHeight) {
+        menuBar.classList.add('menubar--fixed')
+    }else {
+        menuBar.classList.remove('menubar--fixed')
+    }
 })
