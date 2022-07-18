@@ -28,7 +28,7 @@ const scrollSpy = {
         let position = element.offsetTop - menuHeight;
 
         if (!fixedMenu) {
-          position = position - menuHeight;
+          position = position - menuHeight
         }
         window.scroll({
           left: 0,
