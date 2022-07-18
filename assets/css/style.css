@@ -142,3 +142,55 @@ img {
     color: var(--main-color);
     font-weight: 600;
 }
+
+.image-modal-popup {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    animation: 500ms fadeIn;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.image-modal-popup .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.image-modal-popup img {
+    width: 80%;
+    max-height: calc(100vh - 150px);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image-modal-popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 4rem;
+    color: red;
+    cursor: pointer;
+}
+
+.image-modal-popup .description {
+    text-align: center;
+}
