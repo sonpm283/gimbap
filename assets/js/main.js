@@ -28,7 +28,7 @@ const scrollSpy = {
         let position = element.offsetTop - menuHeight;
 
         if (!fixedMenu) {
-          position = position - menuHeight
+          position = position - menuHeight;
         }
         window.scroll({
           left: 0,
@@ -81,27 +81,28 @@ const modal = {
     this.modal();
   },
   modal: function () {
-        const productImg = document.querySelectorAll('.menu__img img')
-        const modalElemt = element => document.querySelector(`.image-modal-popup ${element}`)
-        const body = document.querySelector('body');
-        document.addEventListener('click', () => {
-            body.style.overflow = 'auto';
-            modalPopup.style.display = 'none';
-        });
-        const modalPopup = document.querySelector('.image-modal-popup');
+    const productImg = document.querySelectorAll(".menu__img img");
+    const modalElement = (element) =>
+      document.querySelector(`.image-modal-popup ${element}`);
+    const body = document.querySelector("body");
+    document.addEventListener("click", () => {
+      body.style.overflow = "auto";
+      modalPopup.style.display = "none";
+    });
+    const modalPopup = document.querySelector(".image-modal-popup");
 
-        productImg.forEach(img => {
-            const data = img.dataset;
-            img.addEventListener('click', e => {
-              body.style.overflow = 'hidden';
-              e.stopPropagation();
-              modalPopup.style.display = 'block';
-                modalElemt('h1').innerHTML = data.title;
-                modalElemt('p').innerHTML = data.price;
-            //   modalElement('a').href = data.url;
-            //   modalElement('.secondary-link').href = data.repo;
-                modalElemt('img').src = img.src;
-            });
-          });
+    productImg.forEach((img) => {
+      const data = img.dataset;
+      img.addEventListener("click", (e) => {
+        body.style.overflow = "hidden";
+        e.stopPropagation();
+        modalPopup.style.display = "block";
+        modalElement("h1").innerHTML = data.title;
+        modalElement("p").innerHTML = data.price;
+        //   modalElement('a').href = data.url;
+        //   modalElement('.secondary-link').href = data.repo;
+        modalElement("img").src = img.src;
+      });
+    });
   },
 };
