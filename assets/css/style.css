@@ -56,6 +56,10 @@ img {
     padding-top: 10px !important;
 }
 
+.height-425 {
+    height: 425px !important;
+}
+
 .container {
     width: 480px;
     max-width: 100%;
