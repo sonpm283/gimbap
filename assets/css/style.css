@@ -139,7 +139,7 @@ img {
 
 .menu__name {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     height: 22px;
     overflow: hidden;
