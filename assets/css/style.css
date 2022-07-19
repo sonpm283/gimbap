@@ -59,10 +59,16 @@ img {
 .height-425 {
     height: 425px !important;
 }
+
 .tf-x-8 {
     transform: translateX(-8px);
     z-index: -1;
 }
+
+.f-17 {
+    font-size: 17px !important;
+}
+
 .container {
     width: 480px;
     max-width: 100%;
@@ -129,17 +135,13 @@ img {
     margin-bottom: 10px;
 }
 
-.menu__name {
-    text-transform: uppercase;
-}
-
 .menu__desc {
     padding: 5px 5px 15px 5px;
 }
 
 .menu__name {
     color: var(--text-color);
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
     height: 22px;
     overflow: hidden;
@@ -149,6 +151,8 @@ img {
     -webkit-box-orient: vertical;
     margin: 3px 0 10px;
     line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .menu__img {
@@ -168,7 +172,7 @@ img {
 }
 
 .menu__price {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--main-color);
     font-weight: 600;
 }
