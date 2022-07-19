@@ -61,6 +61,7 @@ img {
 }
 .tf-x-8 {
     transform: translateX(-8px);
+    z-index: -1;
 }
 .container {
     width: 480px;
@@ -75,6 +76,7 @@ img {
     left: 0;
     right: 0;
     background-color: var(--bg-color);
+    z-index: 99;
 }
 
 .category {
