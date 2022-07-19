@@ -177,6 +177,13 @@ img {
     position: relative;
 }
 
+.image-modal-popup p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
 .image-modal-popup img {
     width: 80%;
     max-height: calc(100vh - 150px);
