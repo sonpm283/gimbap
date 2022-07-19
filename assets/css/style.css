@@ -184,6 +184,7 @@ img {
     color: var(--white-color);
     animation: 500ms fadeIn;
     display: none;
+    z-index: 100;
 }
 
 @keyframes fadeIn {
