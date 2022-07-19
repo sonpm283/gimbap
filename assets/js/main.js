@@ -1,5 +1,3 @@
-//goblal variable
-
 window.addEventListener("DOMContentLoaded", () => {
   activeCategory.init();
   fixedMenuCategory.init();
