@@ -87,7 +87,7 @@ img {
 .menu__title {
     padding: 10px 0;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
 }
 
@@ -110,15 +110,16 @@ img {
 
 .menu__name {
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
-    height: 18px;
+    height: 22px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    margin: 3px 0 5px;
+    margin: 3px 0 10px;
+    line-height: 22px;
 }
 
 .menu__img {
@@ -137,7 +138,7 @@ img {
 }
 
 .menu__price {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--main-color);
     font-weight: 600;
 }
