@@ -97,6 +97,7 @@ img {
 }
 
 .menu__item {
+    padding: 8px;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -130,6 +131,7 @@ img {
 .menu__img img {
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
     transition: all .25s ease-in-out;
 }
 
