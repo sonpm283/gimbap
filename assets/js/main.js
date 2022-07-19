@@ -99,8 +99,8 @@ const modal = {
         modalPopup.style.display = "block";
         modalElement("h1").innerHTML = data.title;
         modalElement("p").innerHTML = data.price;
-        //   modalElement('a').href = data.url;
-        //   modalElement('.secondary-link').href = data.repo;
+        //modalElement('a').href = data.url;
+        //modalElement('.secondary-link').href = data.repo;
         modalElement("img").src = img.src;
       });
     });
