@@ -59,7 +59,9 @@ img {
 .height-425 {
     height: 425px !important;
 }
-
+.tf-x-8 {
+    transform: translateX(-8px);
+}
 .container {
     width: 480px;
     max-width: 100%;
