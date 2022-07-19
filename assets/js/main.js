@@ -97,7 +97,7 @@ const modal = {
               e.stopPropagation();
               modalPopup.style.display = 'block';
                 modalElemt('h1').innerHTML = data.title;
-            //   modalElement('p').innerHTML = data.description;
+                modalElemt('p').innerHTML = data.price;
             //   modalElement('a').href = data.url;
             //   modalElement('.secondary-link').href = data.repo;
                 modalElemt('img').src = img.src;
