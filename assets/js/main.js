@@ -34,6 +34,7 @@ const scrollSpy = {
           left: 0,
           top: position,
         });
+        window.animate
       });
     });
   },
