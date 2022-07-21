@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   fixedMenuCategory.init();
   scrollSpy.init();
   modal.init();
+  setWidthMenuDesc.init()
 });
 
 //global variable
@@ -32,7 +33,7 @@ const scrollSpy = {
           left: 0,
           top: position,
         });
-        window.animate
+        window.animate;
       });
     });
   },
@@ -102,6 +103,23 @@ const modal = {
         //modalElement('.secondary-link').href = data.repo;
         modalElement("img").src = img.src;
       });
+    });
+  },
+};
+
+// set width menu_desc
+
+const setWidthMenuDesc = {
+  init: function () {
+    this.setWidthMenuDesc();
+  },
+  setWidthMenuDesc() {
+    const imgProduct = document.querySelector(".menu__img");
+    const menuDesc = document.querySelectorAll(".menu__desc");
+
+    let imgProductWidth = imgProduct.getBoundingClientRect().width;
+    menuDesc.forEach((img) => {
+      img.style.width = `${imgProductWidth}px`;
     });
   },
 };
