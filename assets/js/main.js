@@ -107,8 +107,7 @@ const modal = {
   },
 };
 
-// set width menu_desc
-
+// set width menu desc
 const setWidthMenuDesc = {
   init: function () {
     this.setWidthMenuDesc();
