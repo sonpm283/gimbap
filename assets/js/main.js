@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   fixedMenuCategory.init();
   scrollSpy.init();
   modal.init();
-  setWidthMenuDesc.init()
+  setWidthMenuDesc.init();
 });
 
 //global variable
