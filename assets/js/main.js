@@ -82,8 +82,7 @@ const modal = {
   },
   modal: function () {
     const productImg = document.querySelectorAll(".menu__img img");
-    const modalElement = (element) =>
-      document.querySelector(`.image-modal-popup ${element}`);
+    const modalElement = (element) => document.querySelector(`.image-modal-popup ${element}`);
     const body = document.querySelector("body");
     document.addEventListener("click", () => {
       body.style.overflow = "auto";
